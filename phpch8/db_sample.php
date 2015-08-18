@@ -7,7 +7,6 @@
 	  INSERT INTO books
 	  VALUES ('{$_POST['title']}', {$_POST['pub_year']}, '{$_POST['ISBN']}');
 SQL;
-	  $dis_sql = "SELECT * FROM books";
 
 	   //check if query is successful
 	   if(!$result = $db->query($ins_sql)) {

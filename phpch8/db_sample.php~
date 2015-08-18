@@ -14,20 +14,9 @@ SQL;
 	     die('There was an error inserting the data [' . $db->error . ']');
 	   }
 	   else {
-	     echo "Insertion Succesful! <br>";
-	     //echo "Title &nbsp; Year Published &nbsp; ISBN";
-	     	  $display = $db->query($dis_sql);
-	  while($row = $display->fetch_assoc()) {
-	    echo $row['name'] . '<br>';
-	  }
-	     
+	     echo "Insertion Succesful! <br>";    
 	   }
 
- 	  //display updated contents
-	  $display = $db->query($dis_sql);
-	  while($row = $display->fetch_assoc()) {
-	    echo $row['name'] . '<br>';
-	  }
 	  $db->close;
 	}
 	catch (Exception $error) {
